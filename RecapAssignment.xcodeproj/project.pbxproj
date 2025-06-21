@@ -19,6 +19,7 @@
 		DE7C6EE32B662C86005B2AFE /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7C6EE22B662C86005B2AFE /* SearchTableViewCell.swift */; };
 		DE7C6EE62B662DD6005B2AFE /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = DE7C6EE52B662DD6005B2AFE /* SnapKit */; };
 		DE7C6EE82B662DD6005B2AFE /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = DE7C6EE72B662DD6005B2AFE /* SnapKit-Dynamic */; };
+		DE7C6EEC2B667C66005B2AFE /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7C6EEB2B667C66005B2AFE /* ProfileTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		DE7C6EDE2B6627F1005B2AFE /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		DE7C6EE02B6627FD005B2AFE /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		DE7C6EE22B662C86005B2AFE /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		DE7C6EEB2B667C66005B2AFE /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,8 @@
 		DE7C6EC72B6626B4005B2AFE /* RecapAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				DE7C6EEA2B667C53005B2AFE /* Profile */,
+				DE7C6EE92B667C49005B2AFE /* Search */,
 				DE7C6EDC2B6627CE005B2AFE /* MainTabBarController.swift */,
 				DE7C6EC82B6626B4005B2AFE /* AppDelegate.swift */,
 				DE7C6ECA2B6626B4005B2AFE /* SceneDelegate.swift */,
@@ -76,11 +80,26 @@
 				DE7C6ED12B6626B5005B2AFE /* Assets.xcassets */,
 				DE7C6ED32B6626B5005B2AFE /* LaunchScreen.storyboard */,
 				DE7C6ED62B6626B5005B2AFE /* Info.plist */,
-				DE7C6EDE2B6627F1005B2AFE /* SearchViewController.swift */,
-				DE7C6EE02B6627FD005B2AFE /* ProfileViewController.swift */,
-				DE7C6EE22B662C86005B2AFE /* SearchTableViewCell.swift */,
 			);
 			path = RecapAssignment;
+			sourceTree = "<group>";
+		};
+		DE7C6EE92B667C49005B2AFE /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				DE7C6EDE2B6627F1005B2AFE /* SearchViewController.swift */,
+				DE7C6EE22B662C86005B2AFE /* SearchTableViewCell.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		DE7C6EEA2B667C53005B2AFE /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				DE7C6EE02B6627FD005B2AFE /* ProfileViewController.swift */,
+				DE7C6EEB2B667C66005B2AFE /* ProfileTableViewCell.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE7C6EE12B6627FD005B2AFE /* ProfileViewController.swift in Sources */,
+				DE7C6EEC2B667C66005B2AFE /* ProfileTableViewCell.swift in Sources */,
 				DE7C6EDF2B6627F1005B2AFE /* SearchViewController.swift in Sources */,
 				DE7C6ECD2B6626B4005B2AFE /* ViewController.swift in Sources */,
 				DE7C6EC92B6626B4005B2AFE /* AppDelegate.swift in Sources */,

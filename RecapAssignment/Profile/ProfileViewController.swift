@@ -9,11 +9,14 @@ import UIKit
 
 class ProfileViewController: UIViewController, CodeBase {
 
+    let tableView = UITableView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = .red
+        view.backgroundColor = .black
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        navigationItem.title = "설정"
         
         setAddView()
         setAttribute()

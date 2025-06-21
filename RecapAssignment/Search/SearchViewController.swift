@@ -26,12 +26,25 @@ class SearchViewController: UIViewController, CodeBase {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(SearchTableViewCell.self, forCellReuseIdentifier: "SearchTableViewCell")
+        tableView.rowHeight = 40
         
         setAddView()
         setAttribute()
         setLayout()
         
+        setupGestureRecognizer()
     }
+    
+    private func setupGestureRecognizer() {
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(labelClicked))
+        allDelete.addGestureRecognizer(tapGestureRecognizer)
+        allDelete.isUserInteractionEnabled = true
+    }
+    
+    @objc private func labelClicked(_ tapRecognizer: UITapGestureRecognizer) {
+        print("모두 지우기 버튼 눌림")
+    }
+
     
     func setAddView() {
         view.addSubview(searchBar)
@@ -39,6 +52,8 @@ class SearchViewController: UIViewController, CodeBase {
         view.addSubview(allDelete)
         view.addSubview(tableView)
     }
+    
+    
     
     func setAttribute() {
         searchBar.placeholder = "브랜드, 상품, 프로필, 태그 등"
@@ -50,6 +65,7 @@ class SearchViewController: UIViewController, CodeBase {
         
         allDelete.text = "모두 지우기"
         allDelete.textColor = .green
+        allDelete.font = .systemFont(ofSize: 15)
         
         tableView.backgroundColor = .black
 
@@ -57,7 +73,7 @@ class SearchViewController: UIViewController, CodeBase {
     
     func setLayout() {
         searchBar.snp.makeConstraints { make in
-            make.horizontalEdges.equalTo(10)
+            make.horizontalEdges.equalTo(view)
             make.top.equalTo(view.safeAreaLayoutGuide)
             make.height.equalTo(44)
         }
